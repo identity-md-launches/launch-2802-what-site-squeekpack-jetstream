@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: Space;
+        src: url("../public/fonts/space-grotesk-latin.woff2");
+        font-weight: 300 700;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        background: #1b241e;
+        color: #eeeede;
+        font-family: Space, Arial, sans-serif;
+        overflow: hidden;
+      }
+      .grid {
+        position: absolute;
+        inset: 0;
+        background:
+          repeating-linear-gradient(
+            0deg,
+            transparent 0 63px,
+            #323b2a 64px 65px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 127px,
+            #323b2a 128px 130px
+          );
+        opacity: 0.5;
+      }
+      .line {
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        top: 109px;
+        height: 1px;
+        background: #65704d;
+      }
+      .brand {
+        position: absolute;
+        left: 60px;
+        top: 42px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .brand img {
+        width: 42px;
+      }
+      .edition {
+        position: absolute;
+        right: 60px;
+        top: 55px;
+        font-size: 17px;
+        color: #bdc4ab;
+      }
+      .title {
+        position: absolute;
+        left: 58px;
+        top: 160px;
+        font-size: 108px;
+        line-height: 0.97;
+        letter-spacing: -6px;
+        font-weight: 700;
+      }
+      .title span {
+        color: #ff965c;
+      }
+      .caption {
+        position: absolute;
+        left: 64px;
+        top: 422px;
+        font-size: 24px;
+        color: #bdc4ab;
+      }
+      .bottom {
+        position: absolute;
+        left: 60px;
+        right: 60px;
+        bottom: 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+      }
+      .play {
+        background: #ff965c;
+        color: #171917;
+        padding: 16px 26px;
+        border-radius: 6px;
+        font-weight: 600;
+      }
+      .art {
+        position: absolute;
+        left: 740px;
+        top: 175px;
+        width: 340px;
+        height: 330px;
+        image-rendering: pixelated;
+      }
+      .dust {
+        position: absolute;
+        left: 714px;
+        top: 384px;
+        color: #bfc39b;
+        font-size: 72px;
+        letter-spacing: 14px;
+      }
+      .ring {
+        position: absolute;
+        left: 752px;
+        top: 157px;
+        width: 320px;
+        height: 320px;
+        border: 2px dashed #647048;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid"></div>
+    <div class="brand"><img src="../public/favicon.svg" />SqueekPack</div>
+    <div class="edition">A Squeekchain arcade · Vol. 01</div>
+    <div class="line"></div>
+    <div class="title">Jetstream<br /><span>Run.</span></div>
+    <div class="caption">A tiny jetpack. Powered by a real hamster.</div>
+    <div class="ring"></div>
+    <div class="dust">···</div>
+    <svg class="art" viewBox="-40 -40 90 86" shape-rendering="crispEdges">
+      <g transform="rotate(-8)">
+        <path fill="#909c88" d="M-34-7h12v25h-12zM-27 14h8v13h-8z" />
+        <path fill="#d0d1b6" d="M-34-4h4v15h-4z" />
+        <path fill="#3b2d22" d="M-18-19h34v39h-34zM-23-10h45v26h-45z" />
+        <path fill="#d7a260" d="M-17-16h31v34h-31zM-20-9h40v23h-40z" />
+        <path
+          fill="#f4d6a3"
+          d="M-4-13h19v32h-19zM7-5h19v18H7zM20-1h9v7h-9zM-14 19h11v6h-11zM9 18h11v6H9z"
+        />
+        <path
+          fill="#362a21"
+          d="M-18-27h29v6h-29zM-23-21h39v11h-39zM-20-15h41v9h-41z"
+        />
+        <path
+          fill="#bc7444"
+          d="M-17-25h27v9h-27zM-20-18h34v10h-34zM-19-10h7v17h-7z"
+        />
+        <path fill="#efb46d" d="M-13-24h6v12h-6z" />
+        <path fill="#bdac79" d="M1-14h22v12H1z" />
+        <path fill="#4e7d72" d="M5-11h14v7H5z" />
+        <path fill="#b1d3b0" d="M6-11h7v2H6z" />
+        <path fill="#644032" d="M26 0h5v4h-5zM11 2h3v3h-3zM16 9h8v2h-8z" />
+        <path fill="#ff965c" d="m-32 24-7 18 14-5 1-13z" />
+        <path fill="#f0cc74" d="m-29 24-4 11 7-5v-6z" />
+      </g>
+    </svg>
+    <div class="bottom">
+      <span>Real wheel. Real hamster. Your tailwind.</span
+      ><span class="play">Play Jetstream Run →</span>
+    </div>
+  </body>
+</html>

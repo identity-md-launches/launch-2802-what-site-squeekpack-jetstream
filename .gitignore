@@ -1,0 +1,7 @@
+# Explicit path budget: artifacts/path-budget.md. The production export stays included.
+**/node_modules/
+**/.npm/
+**/.vite/
+**/.cache/
+/test/scratch/
+/.playwright-mcp/
